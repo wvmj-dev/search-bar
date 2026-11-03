@@ -1,0 +1,38 @@
+# Checks that need no GNOME Shell. The headless smoke test (./build.sh test)
+# needs GNOME Shell 48+, which GitHub's runners do not ship, so run it locally.
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install tools
+        run: sudo apt-get update && sudo apt-get install -y gjs gir1.2-gdkpixbuf-2.0 libglib2.0-bin gettext
+
+      - name: Shell scripts parse
+        run: bash -n build.sh tests/smoke.sh
+
+      - name: Schema (strict) and translations compile
+        run: ./build.sh
+
+      - name: Translations are complete
+        run: |
+          for po in po/*.po; do
+            stats=$(LC_ALL=C msgfmt --statistics -o /dev/null "$po" 2>&1)
+            echo "$po: $stats"
+            if echo "$stats" | grep -qE 'untranslated|fuzzy'; then exit 1; fi
+          done
+
+      - name: Template is up to date
+        run: |
+          ./build.sh pot
+          git diff --ignore-matching-lines='POT-Creation-Date' --exit-code po/
+
+      - name: Unit tests
+        run: ./build.sh unit
