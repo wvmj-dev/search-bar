@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.search-bar"
+          path="/org/gnome/shell/extensions/search-bar/">
+    <!-- Appearance: size -->
+    <key name="width" type="i">
+      <range min="320" max="1600"/>
+      <default>640</default>
+      <summary>Width of the bar in pixels</summary>
+      <description>Also changed by dragging the grip at the bottom-right corner.</description>
+    </key>
+    <key name="visible-rows" type="i">
+      <range min="1" max="20"/>
+      <default>8</default>
+      <summary>Most results shown at once</summary>
+      <description>More results scroll. Also changed by dragging the grip at the bottom-right corner.</description>
+    </key>
+    <key name="icon-size" type="i">
+      <range min="16" max="64"/>
+      <default>32</default>
+      <summary>Size of the results' icons in pixels</summary>
+    </key>
+    <key name="font-size" type="i">
+      <range min="0" max="32"/>
+      <default>0</default>
+      <summary>Text size in pixels</summary>
+      <description>0 uses the size of GNOME's theme.</description>
+    </key>
+    <key name="show-descriptions" type="b">
+      <default>true</default>
+      <summary>Show a second line under each result</summary>
+      <description>A file's folder, a setting's description, an open window's app.</description>
+    </key>
+    <key name="show-source" type="b">
+      <default>true</default>
+      <summary>Show where each result comes from</summary>
+    </key>
+
+    <!-- Appearance: look -->
+    <key name="highlight-color" type="s">
+      <default>''</default>
+      <summary>Highlight color</summary>
+      <description>A color as #rrggbb. Empty uses the system accent color.</description>
+    </key>
+    <key name="highlight-opacity" type="i">
+      <range min="10" max="100"/>
+      <default>100</default>
+      <summary>Opacity of the highlight in percent</summary>
+    </key>
+    <key name="corner-radius" type="i">
+      <range min="0" max="32"/>
+      <default>16</default>
+      <summary>Corner radius of the highlight in pixels</summary>
+    </key>
+    <key name="border-width" type="i">
+      <range min="0" max="6"/>
+      <default>2</default>
+      <summary>Width of the highlight's light border in pixels</summary>
+      <description>0 draws no border.</description>
+    </key>
+    <key name="focus-scale" type="i">
+      <range min="100" max="130"/>
+      <default>110</default>
+      <summary>Size of the selected result's icon in percent</summary>
+      <description>100 turns the growth off.</description>
+    </key>
+    <key name="panel-radius" type="i">
+      <range min="0" max="48"/>
+      <default>28</default>
+      <summary>Corner radius of the bar in pixels</summary>
+    </key>
+    <key name="panel-opacity" type="i">
+      <range min="50" max="100"/>
+      <default>97</default>
+      <summary>Opacity of the bar's background in percent</summary>
+    </key>
+    <key name="backdrop-opacity" type="i">
+      <range min="0" max="80"/>
+      <default>0</default>
+      <summary>How much the screen behind the bar darkens, in percent</summary>
+      <description>0 leaves the screen as it is.</description>
+    </key>
+
+    <!-- Animation: opening -->
+    <key name="open-animation" type="s">
+      <choices>
+        <choice value="zoom"/>
+        <choice value="slide"/>
+        <choice value="unfold"/>
+        <choice value="fade"/>
+        <choice value="none"/>
+      </choices>
+      <default>'zoom'</default>
+      <summary>How the bar appears</summary>
+      <description>It disappears the same way, backwards and faster.</description>
+    </key>
+    <key name="open-duration" type="i">
+      <range min="50" max="1000"/>
+      <default>200</default>
+      <summary>Length of the opening in milliseconds</summary>
+      <description>Closing takes 70% of it.</description>
+    </key>
+    <key name="open-curve" type="s">
+      <choices>
+        <choice value="smooth"/>
+        <choice value="overshoot"/>
+        <choice value="bounce"/>
+        <choice value="elastic"/>
+        <choice value="linear"/>
+      </choices>
+      <default>'smooth'</default>
+      <summary>Speed curve of the opening</summary>
+    </key>
+    <key name="reveal-amount" type="i">
+      <range min="0" max="100"/>
+      <default>50</default>
+      <summary>How far the bar travels when it appears</summary>
+      <description>How small zoom starts, how far slide comes from, how folded unfold starts. 50 is the original look.</description>
+    </key>
+
+    <!-- Animation: selection -->
+    <key name="animation" type="s">
+      <choices>
+        <choice value="slide"/>
+        <choice value="stretch"/>
+        <choice value="liquid"/>
+        <choice value="jelly"/>
+        <choice value="pop"/>
+        <choice value="fade"/>
+        <choice value="none"/>
+      </choices>
+      <default>'slide'</default>
+      <summary>How the highlight moves to the selected result</summary>
+    </key>
+    <key name="animation-duration" type="i">
+      <range min="50" max="1000"/>
+      <default>220</default>
+      <summary>Length of the highlight's movement in milliseconds</summary>
+      <description>Every animation follows GNOME's Animations setting: with animations off, everything is instant.</description>
+    </key>
+    <key name="animation-curve" type="s">
+      <choices>
+        <choice value="smooth"/>
+        <choice value="overshoot"/>
+        <choice value="bounce"/>
+        <choice value="elastic"/>
+        <choice value="linear"/>
+      </choices>
+      <default>'overshoot'</default>
+      <summary>Speed curve of the highlight</summary>
+      <description>Not used by liquid, jelly and none, which have their own motion.</description>
+    </key>
+    <key name="curve-rebound" type="i">
+      <range min="0" max="100"/>
+      <default>50</default>
+      <summary>How far overshoot, bounce and elastic rebound, in percent</summary>
+      <description>50 is the usual amount; also used by the opening's curve.</description>
+    </key>
+    <key name="stretch-reach" type="i">
+      <range min="20" max="70"/>
+      <default>40</default>
+      <summary>Share of the stretch spent reaching over both results, in percent</summary>
+    </key>
+    <key name="liquid-viscosity" type="i">
+      <range min="0" max="100"/>
+      <default>50</default>
+      <summary>How liquid the drop is</summary>
+      <description>More: the head runs further ahead and the neck gets thinner. 50 is the original drop.</description>
+    </key>
+    <key name="jelly-bounce" type="i">
+      <range min="0" max="100"/>
+      <default>50</default>
+      <summary>How much the jelly bounces</summary>
+    </key>
+    <key name="jelly-wobbles" type="i">
+      <range min="1" max="4"/>
+      <default>2</default>
+      <summary>How many times the jelly wobbles</summary>
+    </key>
+    <key name="jelly-stretch" type="i">
+      <range min="0" max="60"/>
+      <default>30</default>
+      <summary>How much the jelly stretches while moving, in percent</summary>
+    </key>
+    <key name="pop-size" type="i">
+      <range min="0" max="80"/>
+      <default>30</default>
+      <summary>Size pop shrinks to before jumping, in percent</summary>
+    </key>
+    <key name="animate-results" type="b">
+      <default>true</default>
+      <summary>Animate the list of results</summary>
+      <description>The list grows and shrinks smoothly and new rows fade in.</description>
+    </key>
+
+    <!-- Behavior: opening -->
+    <key name="search-bar-toggle" type="as">
+      <default><![CDATA[['<Super>slash']]]></default>
+      <summary>Shortcut that opens and closes the bar</summary>
+    </key>
+    <key name="monitor" type="s">
+      <choices>
+        <choice value="pointer"/>
+        <choice value="focused"/>
+        <choice value="primary"/>
+      </choices>
+      <default>'pointer'</default>
+      <summary>Monitor the bar appears on</summary>
+    </key>
+    <key name="position" type="s">
+      <choices>
+        <choice value="center"/>
+        <choice value="top"/>
+        <choice value="bottom"/>
+        <choice value="custom"/>
+      </choices>
+      <default>'center'</default>
+      <summary>Where the bar appears</summary>
+      <description>Dragging the bar by its edge sets custom.</description>
+    </key>
+    <key name="custom-x" type="d">
+      <range min="0" max="100"/>
+      <default>50</default>
+      <summary>Horizontal place of a custom position, in percent of the free space</summary>
+      <description>0 is the left edge of the monitor, 100 the right.</description>
+    </key>
+    <key name="custom-y" type="d">
+      <range min="0" max="100"/>
+      <default>30</default>
+      <summary>Vertical place of a custom position, in percent of the free space</summary>
+      <description>0 is the top of the monitor, 100 the bottom.</description>
+    </key>
+    <key name="remember-geometry" type="b">
+      <default>true</default>
+      <summary>Save the position and size changed with the mouse</summary>
+      <description>Off: dragging and resizing last until the bar closes.</description>
+    </key>
+    <key name="close-on-click-outside" type="b">
+      <default>true</default>
+      <summary>Close when clicking outside the bar</summary>
+    </key>
+
+    <!-- Behavior: search -->
+    <key name="empty-query" type="s">
+      <choices>
+        <choice value="frequent"/>
+        <choice value="nothing"/>
+      </choices>
+      <default>'frequent'</default>
+      <summary>What the bar shows before anything is typed</summary>
+    </key>
+    <key name="results-per-source" type="i">
+      <range min="1" max="20"/>
+      <default>5</default>
+      <summary>Most results of one source</summary>
+    </key>
+    <key name="max-results" type="i">
+      <range min="5" max="100"/>
+      <default>30</default>
+      <summary>Most results in all</summary>
+    </key>
+    <key name="search-delay" type="i">
+      <range min="0" max="500"/>
+      <default>100</default>
+      <summary>Wait after the last key before searching, in milliseconds</summary>
+      <description>0 searches on every key.</description>
+    </key>
+    <key name="select-on-hover" type="b">
+      <default>true</default>
+      <summary>Select the result under the pointer</summary>
+    </key>
+    <key name="disabled-sources" type="as">
+      <default>[]</default>
+      <summary>Sources whose results are not shown</summary>
+      <description>applications, actions, windows, or the desktop id of one of GNOME's search providers, such as org.gnome.Nautilus.desktop.</description>
+    </key>
+  </schema>
+</schemalist>

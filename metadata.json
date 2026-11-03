@@ -1,0 +1,12 @@
+{
+  "uuid": "search-bar@wvmj-dev.github.io",
+  "name": "Search Bar",
+  "description": "A rofi-style search bar that opens with a shortcut, finds apps, files and settings through GNOME's search providers, and can be moved, resized and animated.",
+  "settings-schema": "org.gnome.shell.extensions.search-bar",
+  "gettext-domain": "search-bar",
+  "shell-version": [
+    "50"
+  ],
+  "version": 1,
+  "url": "https://github.com/wvmj-dev/search-bar"
+}

@@ -1,0 +1,131 @@
+/* Search Bar. Class names start with sb- so they never clash with
+   GNOME's or another extension's. The bar is dark in both styles, like
+   GNOME's switcher and OSDs, so one stylesheet serves both. Sizes and
+   positions come from layout.js; this file only sets the look. */
+
+/* The bar: GNOME's dark surface. Its background color and opacity, corner
+   radius and text size are set inline from the settings. */
+.sb-panel {
+  background-color: #2e2e33;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  color: #ffffff;
+}
+
+.sb-panel:moving {
+  border-color: st-transparentize(-st-accent-color, 0.3);
+}
+
+.sb-panel:resizing {
+  border-color: st-transparentize(-st-accent-color, 0.3);
+}
+
+/* The search field, like the overview's but on the bar's surface. */
+.sb-entry-box {
+  background-color: #3a3a3f;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  padding: 0 12px;
+  spacing: 10px;
+}
+
+.sb-search-icon {
+  icon-size: 16px;
+  color: st-transparentize(#ffffff, 0.3);
+}
+
+.sb-entry,
+.sb-entry:focus,
+.sb-entry:hover {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  color: #ffffff;
+  caret-color: #ffffff;
+  selection-background-color: -st-accent-color;
+  selected-color: -st-accent-fg-color;
+}
+
+.sb-entry StLabel.hint-text {
+  color: st-transparentize(#ffffff, 0.55);
+}
+
+.sb-count {
+  color: st-transparentize(#ffffff, 0.5);
+  font-size: 0.85em;
+  font-feature-settings: "tnum";
+}
+
+/* A result. The highlight behind the selected one does the selecting;
+   the row only turns its text to the accent's text color. */
+.sb-row {
+  border-radius: 16px;
+  padding: 0 12px;
+  color: #ffffff;
+}
+
+.sb-row:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.sb-row:selected,
+.sb-row:selected:hover {
+  background-color: transparent;
+  color: -st-accent-fg-color;
+}
+
+.sb-row-box {
+  spacing: 12px;
+}
+
+/* The name and the description, close together. */
+.sb-text {
+  spacing: 1px;
+}
+
+.sb-name {
+  font-weight: bold;
+}
+
+.sb-description {
+  font-size: 0.85em;
+  color: st-transparentize(#ffffff, 0.4);
+}
+
+.sb-row:selected .sb-description {
+  color: inherit;
+}
+
+.sb-source {
+  font-size: 0.8em;
+  color: st-transparentize(#ffffff, 0.5);
+}
+
+.sb-row:selected .sb-source {
+  color: inherit;
+}
+
+.sb-status {
+  color: st-transparentize(#ffffff, 0.5);
+  padding-left: 12px;
+}
+
+/* The highlight: the accent color with a light border. Its color with
+   opacity, border width and radius are set inline from the settings. */
+.sb-highlight {
+  background-color: -st-accent-color;
+  border: 2px solid st-transparentize(#ffffff, 0.35);
+  border-radius: 16px;
+}
+
+/* The resize grip at the bottom-right corner: a mark along the bar's
+   rounded corner, drawn by bar.js in this color, thicker and in the accent
+   color under the pointer. */
+.sb-grip {
+  color: st-transparentize(#ffffff, 0.55);
+}
+
+.sb-grip:hover {
+  color: -st-accent-color;
+}
