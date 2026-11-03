@@ -1,0 +1,605 @@
+# Search Bar translations.
+# This file is distributed under the same license as the search-bar package.
+msgid ""
+msgstr ""
+"Project-Id-Version: search-bar@wvmj-dev.github.io\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-30 14:38-0300\n"
+"PO-Revision-Date: 2026-10-30 12:00-0300\n"
+"Last-Translator: Wender13 <77487372+Wender13@users.noreply.github.com>\n"
+"Language-Team: none\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: prefs.js:180
+msgid "Disabled"
+msgstr "Desativado"
+
+#: prefs.js:188
+msgid "Change"
+msgstr "Alterar"
+
+#: prefs.js:190
+msgid "Press the keys to use, with Ctrl, Alt or Super. Escape cancels."
+msgstr "Pressione as teclas desejadas, com Ctrl, Alt ou Super. Esc cancela."
+
+#: prefs.js:192
+msgid "New shortcut"
+msgstr "Novo atalho"
+
+#: prefs.js:196 prefs.js:533
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: prefs.js:197
+msgid "Disable"
+msgstr "Desativar"
+
+#: prefs.js:223
+#, javascript-format
+msgid ""
+"%s cannot be the shortcut alone: every app would lose that key. Add Ctrl, "
+"Alt or Super; only keys such as F1 to F12 or Print work alone."
+msgstr ""
+"%s não pode ser o atalho sozinha: todos os aplicativos perderiam essa tecla. "
+"Adicione Ctrl, Alt ou Super; só teclas como F1 a F12 ou Print funcionam "
+"sozinhas."
+
+#: prefs.js:256
+msgid "Smooth"
+msgstr "Suave"
+
+#: prefs.js:257
+msgid "Overshoot"
+msgstr "Exagerada"
+
+#: prefs.js:258
+msgid "Bounce"
+msgstr "Saltitante"
+
+#: prefs.js:259
+msgid "Elastic"
+msgstr "Elástica"
+
+#: prefs.js:260
+msgid "Linear"
+msgstr "Linear"
+
+#: prefs.js:264
+msgid "Appearance"
+msgstr "Aparência"
+
+#: prefs.js:266
+msgid "Size"
+msgstr "Tamanho"
+
+#: prefs.js:267
+msgid ""
+"Width and rows also change by dragging the grip at the bar's bottom-right "
+"corner."
+msgstr ""
+"A largura e as linhas também mudam arrastando a alça no canto inferior "
+"direito da barra."
+
+#: prefs.js:268
+msgid "Width (px)"
+msgstr "Largura (px)"
+
+#: prefs.js:269
+msgid "Rows shown"
+msgstr "Linhas visíveis"
+
+#: prefs.js:269
+msgid "More results scroll"
+msgstr "Mais resultados rolam"
+
+#: prefs.js:270
+msgid "Icon size (px)"
+msgstr "Tamanho dos ícones (px)"
+
+#: prefs.js:271
+msgid "Text size (px)"
+msgstr "Tamanho do texto (px)"
+
+#: prefs.js:271
+msgid "0 uses the theme's size"
+msgstr "0 usa o tamanho do tema"
+
+#: prefs.js:272
+msgid "Show descriptions"
+msgstr "Mostrar descrições"
+
+#: prefs.js:273
+msgid "A second line: a file's folder, an open window's app"
+msgstr "Uma segunda linha: a pasta de um arquivo, o app de uma janela"
+
+#: prefs.js:274
+msgid "Show where results come from"
+msgstr "Mostrar a origem dos resultados"
+
+#: prefs.js:276
+msgid "Highlight"
+msgstr "Destaque"
+
+#: prefs.js:277
+msgid "Custom color"
+msgstr "Cor personalizada"
+
+#: prefs.js:278
+msgid "Use this color instead of the system accent color"
+msgstr "Usar esta cor em vez da cor de destaque do sistema"
+
+#: prefs.js:279
+msgid "Opacity (%)"
+msgstr "Opacidade (%)"
+
+#: prefs.js:280 prefs.js:286
+msgid "Corner radius (px)"
+msgstr "Raio dos cantos (px)"
+
+#: prefs.js:281
+msgid "Border width (px)"
+msgstr "Largura da borda (px)"
+
+#: prefs.js:281
+msgid "0 draws no border"
+msgstr "0 não desenha borda"
+
+#: prefs.js:282
+msgid "Selected icon size (%)"
+msgstr "Tamanho do ícone selecionado (%)"
+
+#: prefs.js:283
+msgid "100 turns the growth off"
+msgstr "100 desliga o crescimento"
+
+#: prefs.js:285
+msgid "Bar"
+msgstr "Barra"
+
+#: prefs.js:287
+msgid "Background opacity (%)"
+msgstr "Opacidade do fundo (%)"
+
+#: prefs.js:288
+msgid "Darken the screen behind (%)"
+msgstr "Escurecer a tela atrás (%)"
+
+#: prefs.js:289
+msgid "0 leaves the screen as it is"
+msgstr "0 deixa a tela como está"
+
+#: prefs.js:292
+msgid "Animation"
+msgstr "Animação"
+
+#: prefs.js:294 prefs.js:465
+msgid "Opening"
+msgstr "Abertura"
+
+#: prefs.js:295
+msgid ""
+"Animations follow GNOME's Animations setting: with animations off, they are "
+"instant."
+msgstr ""
+"As animações seguem a configuração Animações do GNOME: com elas desligadas, "
+"tudo é instantâneo."
+
+#: prefs.js:297
+msgid "Grows from a little smaller"
+msgstr "Cresce a partir de um pouco menor"
+
+#: prefs.js:298
+msgid "Drops in from above"
+msgstr "Desce de cima"
+
+#: prefs.js:299
+msgid "Opens downwards like a menu"
+msgstr "Abre para baixo como um menu"
+
+#: prefs.js:300
+msgid "Fades in where it is"
+msgstr "Surge aos poucos no lugar"
+
+#: prefs.js:301
+msgid "Appears at once"
+msgstr "Aparece de uma vez"
+
+#: prefs.js:303 prefs.js:326
+msgid "Style"
+msgstr "Estilo"
+
+#: prefs.js:304
+msgid "Zoom"
+msgstr "Zoom"
+
+#: prefs.js:305 prefs.js:327
+msgid "Slide"
+msgstr "Deslizar"
+
+#: prefs.js:306
+msgid "Unfold"
+msgstr "Desdobrar"
+
+#: prefs.js:307 prefs.js:332
+msgid "Fade"
+msgstr "Esmaecer"
+
+#: prefs.js:308 prefs.js:333
+msgid "None"
+msgstr "Nenhuma"
+
+#: prefs.js:310 prefs.js:335
+msgid "Duration (ms)"
+msgstr "Duração (ms)"
+
+#: prefs.js:311
+msgid "Closing takes 70% of it"
+msgstr "O fechamento leva 70% dela"
+
+#: prefs.js:312 prefs.js:336
+msgid "Curve"
+msgstr "Curva"
+
+#: prefs.js:313
+msgid "Distance (%)"
+msgstr "Distância (%)"
+
+#: prefs.js:314 prefs.js:367
+msgid "How small zoom starts, how far slide comes from"
+msgstr "Quão pequeno o zoom começa, de quão longe o deslizar vem"
+
+#: prefs.js:316
+msgid "Selection"
+msgstr "Seleção"
+
+#: prefs.js:318
+msgid "Glides to the next result"
+msgstr "Desliza até o próximo resultado"
+
+#: prefs.js:319
+msgid "Reaches over both, then lets go"
+msgstr "Estica sobre os dois e depois solta"
+
+#: prefs.js:320
+msgid "A drop that flows down the list"
+msgstr "Uma gota que escorre pela lista"
+
+#: prefs.js:321
+msgid "Wobbles into place"
+msgstr "Oscila até se acomodar"
+
+#: prefs.js:322
+msgid "Shrinks away and pops up again"
+msgstr "Encolhe e reaparece"
+
+#: prefs.js:323
+msgid "Fades out and in again"
+msgstr "Some e reaparece aos poucos"
+
+#: prefs.js:324
+msgid "Jumps at once"
+msgstr "Pula de uma vez"
+
+#: prefs.js:328
+msgid "Stretch"
+msgstr "Esticar"
+
+#: prefs.js:329
+msgid "Liquid"
+msgstr "Líquido"
+
+#: prefs.js:330
+msgid "Jelly"
+msgstr "Gelatina"
+
+#: prefs.js:331
+msgid "Pop"
+msgstr "Estalo"
+
+#: prefs.js:337
+msgid "Rebound (%)"
+msgstr "Rebote (%)"
+
+#: prefs.js:338 prefs.js:377
+msgid "How far overshoot, bounce and elastic go"
+msgstr "Quanto as curvas exagerada, saltitante e elástica passam do ponto"
+
+#: prefs.js:340
+msgid "Fine-tuning"
+msgstr "Ajuste fino"
+
+#: prefs.js:342
+msgid "Reach (%)"
+msgstr "Alcance (%)"
+
+#: prefs.js:343
+msgid "Share of the time spent reaching over both"
+msgstr "Parte do tempo gasta esticando sobre os dois"
+
+#: prefs.js:344
+msgid "How liquid (%)"
+msgstr "Quão líquido (%)"
+
+#: prefs.js:345
+msgid "More: the head runs ahead, the neck thins"
+msgstr "Mais: a cabeça vai na frente, o pescoço afina"
+
+#: prefs.js:347
+msgid "Bounce (%)"
+msgstr "Quique (%)"
+
+#: prefs.js:348
+msgid "Wobbles"
+msgstr "Oscilações"
+
+#: prefs.js:349
+msgid "Stretch (%)"
+msgstr "Estiramento (%)"
+
+#: prefs.js:349
+msgid "How much it stretches while moving"
+msgstr "Quanto estica enquanto se move"
+
+#: prefs.js:351
+msgid "Smallest size (%)"
+msgstr "Menor tamanho (%)"
+
+#: prefs.js:352
+msgid "Size it shrinks to before jumping"
+msgstr "Tamanho a que encolhe antes de pular"
+
+#: prefs.js:354
+msgid "Results"
+msgstr "Resultados"
+
+#: prefs.js:355
+msgid "Animate the list"
+msgstr "Animar a lista"
+
+#: prefs.js:356
+msgid "The list grows and shrinks smoothly and new rows fade in"
+msgstr ""
+"A lista cresce e encolhe suavemente e as novas linhas surgem aos poucos"
+
+#: prefs.js:362
+msgid "Not used by this style"
+msgstr "Não usado por este estilo"
+
+#: prefs.js:378
+msgid "Used by overshoot, bounce and elastic"
+msgstr "Usado pelas curvas exagerada, saltitante e elástica"
+
+#: prefs.js:388
+msgid "Sources"
+msgstr "Origens"
+
+#: prefs.js:389
+msgid "Built in"
+msgstr "Integradas"
+
+#: prefs.js:415
+msgid "Applications"
+msgstr "Aplicativos"
+
+#: prefs.js:415
+msgid "Installed apps"
+msgstr "Apps instalados"
+
+#: prefs.js:416
+msgid "Open windows"
+msgstr "Janelas abertas"
+
+#: prefs.js:416
+msgid "Find a window by its title or app"
+msgstr "Encontra uma janela pelo título ou app"
+
+#: prefs.js:418
+msgid "System actions"
+msgstr "Ações do sistema"
+
+#: prefs.js:418
+msgid "Lock, log out, power off…"
+msgstr "Bloquear, encerrar sessão, desligar…"
+
+#: prefs.js:420
+msgid "GNOME search providers"
+msgstr "Provedores de pesquisa do GNOME"
+
+#: prefs.js:421
+msgid ""
+"The bar searches with the providers GNOME uses: those turned off in "
+"Settings › Search find nothing here either."
+msgstr ""
+"A barra pesquisa com os provedores que o GNOME usa: os desligados em "
+"Configurações › Pesquisa também não encontram nada aqui."
+
+#: prefs.js:441
+msgid "Turned off in Settings › Search"
+msgstr "Desligado em Configurações › Pesquisa"
+
+#: prefs.js:447
+msgid "No search providers are installed"
+msgstr "Nenhum provedor de pesquisa instalado"
+
+#: prefs.js:450
+msgid "Open Search Settings"
+msgstr "Abrir configurações de pesquisa"
+
+#: prefs.js:464
+msgid "Behavior"
+msgstr "Comportamento"
+
+#: prefs.js:466
+msgid "Shortcut"
+msgstr "Atalho"
+
+#: prefs.js:466
+msgid "Opens and closes the bar"
+msgstr "Abre e fecha a barra"
+
+#: prefs.js:467
+msgid "Monitor"
+msgstr "Monitor"
+
+#: prefs.js:468
+msgid "Under the pointer"
+msgstr "Sob o ponteiro"
+
+#: prefs.js:469
+msgid "Of the focused window"
+msgstr "Da janela em foco"
+
+#: prefs.js:470
+msgid "Primary"
+msgstr "Principal"
+
+#: prefs.js:472
+msgid "Close when clicking outside"
+msgstr "Fechar ao clicar fora"
+
+#: prefs.js:474 prefs.js:476
+msgid "Position"
+msgstr "Posição"
+
+#: prefs.js:475
+msgid "Drag the bar by its edge or its magnifier to move it."
+msgstr "Arraste a barra pela borda ou pela lupa para movê-la."
+
+#: prefs.js:477
+msgid "Center"
+msgstr "Centro"
+
+#: prefs.js:478
+msgid "Top"
+msgstr "Topo"
+
+#: prefs.js:479
+msgid "Bottom"
+msgstr "Base"
+
+#: prefs.js:480
+msgid "Custom"
+msgstr "Personalizada"
+
+#: prefs.js:483
+msgid "Across (%)"
+msgstr "Horizontal (%)"
+
+#: prefs.js:484
+msgid "0 is the left edge, 100 the right"
+msgstr "0 é a borda esquerda, 100 a direita"
+
+#: prefs.js:491
+msgid "Down (%)"
+msgstr "Vertical (%)"
+
+#: prefs.js:492
+msgid "0 is the top, 100 the bottom"
+msgstr "0 é o topo, 100 a base"
+
+#: prefs.js:498
+msgid "Save position and size"
+msgstr "Salvar posição e tamanho"
+
+#: prefs.js:499
+msgid "Off: moving and resizing last until the bar closes"
+msgstr "Desligado: mover e redimensionar valem até a barra fechar"
+
+#: prefs.js:500
+msgid "Reset Position and Size"
+msgstr "Restaurar posição e tamanho"
+
+#: prefs.js:506
+msgid "Set by dragging, or below"
+msgstr "Definida arrastando, ou abaixo"
+
+#: prefs.js:511 bar.js:185
+msgid "Search"
+msgstr "Pesquisa"
+
+#: prefs.js:512
+msgid "Before typing"
+msgstr "Antes de digitar"
+
+#: prefs.js:513
+msgid "Show frequent apps"
+msgstr "Mostrar apps frequentes"
+
+#: prefs.js:514
+msgid "Show nothing"
+msgstr "Não mostrar nada"
+
+#: prefs.js:516
+msgid "Results per source"
+msgstr "Resultados por origem"
+
+#: prefs.js:517
+msgid "Results in all"
+msgstr "Resultados no total"
+
+#: prefs.js:518
+msgid "Delay (ms)"
+msgstr "Espera (ms)"
+
+#: prefs.js:519
+msgid "Wait after the last key; 0 searches on every key"
+msgstr "Espera após a última tecla; 0 pesquisa a cada tecla"
+
+#: prefs.js:520
+msgid "Select under the pointer"
+msgstr "Selecionar sob o ponteiro"
+
+#: prefs.js:524
+msgid "Reset All Settings"
+msgstr "Restaurar todas as configurações"
+
+#: prefs.js:528
+msgid "Reset all settings?"
+msgstr "Restaurar todas as configurações?"
+
+#: prefs.js:529
+msgid "Every option goes back to its default."
+msgstr "Todas as opções voltam ao padrão."
+
+#: prefs.js:534
+msgid "Reset"
+msgstr "Restaurar"
+
+#: bar.js:179
+msgid "Search…"
+msgstr "Pesquisar…"
+
+#: bar.js:531 bar.js:655
+msgid "Searching…"
+msgstr "Pesquisando…"
+
+#: bar.js:531 bar.js:655
+msgid "No results"
+msgstr "Nenhum resultado"
+
+#: bar.js:654
+#, javascript-format
+msgid "%d result"
+msgid_plural "%d results"
+msgstr[0] "%d resultado"
+msgstr[1] "%d resultados"
+
+#: sources.js:237 sources.js:293
+msgid "Application"
+msgstr "Aplicativo"
+
+#: sources.js:237
+msgid "System"
+msgstr "Sistema"
+
+#: sources.js:266
+msgid "Open window"
+msgstr "Janela aberta"
+
+#: sources.js:269
+msgid "Window"
+msgstr "Janela"
