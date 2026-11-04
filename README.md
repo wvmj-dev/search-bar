@@ -509,7 +509,7 @@ The test turns GNOME's external search providers off in its own settings (`disab
 
 [.github/workflows/ci.yml](.github/workflows/ci.yml) runs on every push and pull request on GitHub. It checks script syntax, strict compilation of the schema and the translations, that the translations are complete and have no `fuzzy` entries, that the `.pot` is up to date with the code, and the unit tests.
 
-The smoke test does not run in CI because GitHub's runners do not have GNOME Shell 50. Run it locally before publishing.
+The smoke test does not run in CI because GitHub's runners do not have GNOME Shell 50 or 51. Run it locally before publishing.
 
 ### Manual checks
 
@@ -564,10 +564,11 @@ After changing texts in the code, run `./build.sh pot` and fill in the new or `f
 ### Tested
 
 - GNOME Shell 50.6, Fedora 44, Wayland, through the automated tests above (headless, scale 1 and 2).
+- GNOME Shell 51.1, Fedora 45, Wayland, through the same automated tests.
 
 ### Not yet tested
 
-- **Other GNOME versions:** `metadata.json` declares only 50. It relies on private fields that can change between versions: `Main.overview._overview.controls._searchController._searchResults._providers` (the overview's search providers). Without them the bar still works, but searches only open windows.
+- **Other GNOME versions:** `metadata.json` declares 50 and 51. It relies on private fields that can change between versions: `Main.overview._overview.controls._searchController._searchResults._providers` (the overview's search providers). Without them the bar still works, but searches only open windows.
 - **GNOME's external search providers** in the automated tests (see [Manual checks](#manual-checks)).
 
 ### Missing before publishing

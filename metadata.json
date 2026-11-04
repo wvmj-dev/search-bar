@@ -5,7 +5,8 @@
   "settings-schema": "org.gnome.shell.extensions.search-bar",
   "gettext-domain": "search-bar",
   "shell-version": [
-    "50"
+    "50",
+    "51"
   ],
   "version": 1,
   "url": "https://github.com/wvmj-dev/search-bar"
