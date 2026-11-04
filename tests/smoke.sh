@@ -236,7 +236,7 @@ BAR="$STATE._bar"
 SET="$STATE._settings"
 # Real input: a virtual keyboard and pointer, as a user would press keys and drag.
 run "(() => {
-    const seat = imports.gi.Clutter.get_default_backend().get_default_seat();
+    const seat = global.stage.context.get_backend().get_default_seat();
     global._sbKeys = seat.create_virtual_device(imports.gi.Clutter.InputDeviceType.KEYBOARD_DEVICE);
     global._sbPointer = seat.create_virtual_device(imports.gi.Clutter.InputDeviceType.POINTER_DEVICE);
     return 1;
